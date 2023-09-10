@@ -1,0 +1,61 @@
+.num_row{
+    display:flex;
+}
+.parent_div{
+    width: 300px;
+    height: 475px;
+    border: 5px solid grey;
+}
+
+.num_row div{
+    width: 79px;
+    border: 6px outset lightgray;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+.num_row div:hover, .num_row_2 div:hover{
+    background-color: rgb(211, 228, 235);
+
+}
+
+.num_row_2 {
+    display: flex;
+}
+
+.num_row_2 div {
+    width: 79px;
+    border: 6px outset lightgray;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight:bold
+}
+
+input#result_box {
+    height: 49px;
+    width: 95%;
+    background-color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 40px;
+    text-align: right;
+    border: 5px inset whitesmoke;
+}
+div#clear {
+    background-color: red;
+}
+
+div#calculate_button {
+    background: lightgreen;
+}
+.num_row_2 div:nth-of-type(2){
+    width:176px;
+}

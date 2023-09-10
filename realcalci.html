@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="./css/calci.css">
+    </head>
+    <body>
+        <h1>CALCULATOR</h1>
+        <div class="parent_div">
+            <input type="text" disabled value="0" id="result_box">
+
+            <div class="num_row">
+                <div onclick="calculate(7)">
+                    <p>7</p>
+                </div>
+                <div onclick="calculate(8)">
+                     <p>8</p>
+                </div>
+                <div onclick="calculate(9)">
+                    <p>9</p>
+                </div>
+            </div>
+
+            <div class="num_row">
+
+                <div onclick="calculate(4)">
+                    <p>4</p>
+                </div>
+                <div onclick="calculate(5)">
+                     <p>5</p>
+                </div>
+                <div onclick="calculate(6)">
+                    <p>6</p>
+                </div>
+            </div>
+            <div class="num_row">
+                <div onclick="calculate(1)">
+                    <p>1</p>
+                </div>
+                <div onclick="calculate(2)">
+                     <p>2</p>
+                </div>
+                <div onclick="calculate(3)">
+                    <p>3</p>
+                </div>
+            </div>
+
+
+            <div class="num_row">
+                <div onclick="calculate(0)">
+                    <p>0</p>
+                </div>
+                <div onclick="calculate('+')">
+                     <p>+</p>
+                </div>
+                <div onclick="calculate('-')">
+                    <p>-</p>
+                </div>
+            </div>
+
+            <div class="num_row">
+                <div onclick="calculate('*')">
+                    <p>*</p>
+                </div>
+                <div  id="calculate_button" onclick="calculate('=')">
+                     <p>=</p>
+                </div>
+                <div id="clear" onclick="calculate('clear')">
+                    <p>C</p>
+                </div>
+            </div>
+
+        </div>
+<script>
+    var result_text= ""
+    function calculate(value){
+        if(value!= "=" && value!="clear"){
+            result_text = result_text + value;
+        }
+        else if(value == "clear"){
+            result_text="";
+        } 
+        else if(value == "="){
+            result_text = eval(result_text)
+        }
+        document.getElementById("result_box").value = result_text;
+        
+    }
+</script>
+    </body>
+</html>

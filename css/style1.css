@@ -1,0 +1,21 @@
+
+div.form_container {
+    border: 2px ridge black;
+    border-radius: 36px;
+    margin: 17px;
+    padding: 15px;
+    text-align: center;
+    background-color: antiquewhite;
+    font-family: sans-serif;
+}
+
+
+h2{
+    
+    font-family:'Times New Roman', Times, serif;
+}
+button#result_button:hover {
+    transform:scale(1.12);
+    background-color: cadetblue;
+
+}
